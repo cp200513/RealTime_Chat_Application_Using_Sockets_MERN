@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
@@ -9,12 +8,13 @@ import ProfilePage from "./pages/ProfilePage";
 import { axiosInstance } from "./lib/axios";
 import { useAuthStore } from "./store/useAuthStore";
 import { Loader } from "lucide-react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth } = useAuthStore();
 
   useEffect(() => {
-    checkAuth;
+    checkAuth();
   }, [checkAuth]);
 
   console.log(authUser);
