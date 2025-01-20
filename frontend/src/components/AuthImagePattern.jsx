@@ -15,9 +15,9 @@ const AuthImagePattern = ({ title, subtitle }) => {
   // Function to determine animation class
   const getAnimationClass = (index) => {
     if (cycle % 2 === 0) {
-      return index % 2 === 0 ? "animate-bounce" : "animate-ping";
-    } else {
       return index % 2 === 0 ? "animate-ping" : "animate-bounce";
+    } else {
+      return index % 2 === 0 ? "animate-bounce" : "animate-ping";
     }
   };
 
