@@ -1,21 +1,13 @@
 {
-  "name": "chat_mern",
+  "name": "chat-app",
   "version": "1.0.0",
-  "description": "Backend - MongoDB for database and Cloudinary for handling image uploads and storage",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node backend/src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cp200513/RealTime_Chat_Application_Using_Sockets_MERN.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cp200513/RealTime_Chat_Application_Using_Sockets_MERN/issues"
-  },
-  "homepage": "https://github.com/cp200513/RealTime_Chat_Application_Using_Sockets_MERN#readme"
+  "license": "ISC"
 }
