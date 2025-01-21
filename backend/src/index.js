@@ -8,6 +8,7 @@ import path from "path";
 
 import { connectDB } from "./lib/db.js";
 
+console.log("MONGODB_URI:", process.env.MONGODB_URI);
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import { app, server } from "./lib/socket.js";
